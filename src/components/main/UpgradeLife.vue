@@ -4,20 +4,20 @@
             <!-- Immagine della ragazza con tutte le immagini svolazzanti -->
             <div class="col-6 floating-imgs-container">
                 <!-- Immagine della ragazza che prende appunti -->
-                <img class="rounded" src="../../../public/img/stock-full-hd-11.jpg" alt="">
+                <img class="rounded" src="img/upgrade-life.jpg" alt="">
                 <!-- Logo di YouTube -->
                 <div class="youtube-logo">
-                    <img src="../../../public/img/icon-youtube-play.png" alt="">
+                    <img src="img/icon-youtube-play.png" alt="">
                 </div>
                 <!-- Puntini in cerchio -->
                 <div class="random-dots-circle">
-                    <img src="../../../public/img/maxcoach-shape-05.png" alt="">
+                    <img src="img/shape-dots-circle.png" alt="">
                 </div>
                 <!-- Cerchio random sulla destra -->
                 <div class="random-circle"></div>
                 <!-- Puntini in basso a destra -->
                 <div class="random-dots">
-                    <img src="../../../public/img/maxcoach-shape-07.png" alt="">
+                    <img src="img/shape-dots.png" alt="">
                 </div>
             </div>
             <!-- Blocco di testo "Upgrade yours skills, upgrade your life" sulla destraa -->
@@ -38,8 +38,17 @@
 </script>
 
 <style lang="scss">
+    @import "../../assets/scss/variables";
+
     .upgrade-life {
 
+        a {
+            border-bottom: 1px solid #696969;
+
+            &:hover {
+                border-color: $primary;
+            }
+        }
         p {
             line-height: 1.5rem;
         }

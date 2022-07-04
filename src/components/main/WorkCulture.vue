@@ -12,20 +12,20 @@
             <!-- Immagine del team sulla destra con tutte le immagini svolazzanti -->
             <div class="col-6 floating-imgs-container">
                 <!-- Immagine del team -->
-                <img class="rounded" src="../../../public/img/stock-full-hd-10.jpg" alt="">
+                <img class="rounded" src="img/work-culture.jpg" alt="">
                 <!-- Cerchio arancione sulla sinistra -->
                 <div class="random-circle"></div>
                 <!-- Puntini che spuntano dietro l'immagine della ragazza al pc -->
                 <div class="random-dots">
-                    <img src="../../../public/img/maxcoach-shape-07.png" alt="">
+                    <img src="img/shape-dots.png" alt="">
                 </div>
                 <!-- Immagine della ragazza al pc -->
                 <div class="girl-working-img">
-                    <img class="rounded" src="../../../public/img/about-us.jpg" alt="">
+                    <img class="rounded" src="img/girl-pc.jpg" alt="">
                 </div>
                 <!-- Semicerchi sulla destra -->
                 <div class="spinning-random-circles">
-                    <img src="../../../public/img/maxcoach-shape-02.png" alt="">
+                    <img src="img/shape-spinning-circles.png" alt="">
                 </div>
             </div>
         </div>
@@ -54,10 +54,16 @@
 </script>
 
 <style lang="scss">
+    @import "../../assets/scss/variables";
+
     .work-culture {
         
         a {
-            border-bottom: 1px solid inherit;
+            border-bottom: 1px solid #696969;
+            
+            &:hover {
+                border-color: $primary;
+            }
         }
         p {
             line-height: 1.5rem;

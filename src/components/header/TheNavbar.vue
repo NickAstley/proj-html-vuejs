@@ -5,7 +5,7 @@
         <!-- Logo -->
         <div class="logo-container col-2 text-center">
             <a href="#" class="clickable">
-                <img class="logo" src="../../../public/img/dark-logo.png" alt="Logo MaxCoach">
+                <img class="logo" src="img/logo.png" alt="Logo MaxCoach">
             </a>
         </div>
         <!-- Menu di ricerca, accesso al carrello e al profilo -->
@@ -13,10 +13,10 @@
             <div class="row justify-content-center align-items-center gx-0">
                 <div class="col-auto">
                     <!-- Icona del carello con numero di elementi in absolute -->
-                    <a href="#" class="cart-icon-container clickable">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="item-counter">
-                            0
+                    <a href="#" class="clickable">
+                        <div class="position-relative">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary">0</span>
                         </div>
                     </a>
                     <!-- Icona del profilo -->
@@ -75,22 +75,6 @@
             }
         }
         .nav-menu {
-            .cart-icon-container {
-                position: relative;
-
-                .item-counter {
-                    position: absolute;
-                    top: 6px;
-                    right: 6px;
-                    background: $primary;
-                    width: 1rem;
-                    height: 1rem;
-                    border-radius: 50%;
-                    text-align: center;
-                    color: white;
-                    font-size: 0.7rem;
-                }
-            }
             .search-input {
                 position: relative;
 
