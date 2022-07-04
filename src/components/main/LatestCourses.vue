@@ -7,6 +7,7 @@
         </div>
         <!-- Slider dei corsi -->
         <CoursesSlider class="mb-5"/>
+        <!-- Info sulle notifiche sui corsi -->
         <div class="w-50 mx-auto text-center">
             <span>Control your personal preference settings to get notified about appropriate courses. </span>
             <a href="#" class="fw-semibold">View all courses <i class="fa-solid fa-arrow-right-long"></i></a>

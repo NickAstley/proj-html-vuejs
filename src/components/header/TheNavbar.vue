@@ -1,6 +1,6 @@
 <template>
     <nav class="row justify-content-evenly align-items-center">
-        <!-- Importo il componente che gestisce i dropdown -->
+        <!-- Componente che gestisce i dropdown -->
         <NavDropdowns class="col-4 text-end mb-0" :dropdowns-list="dropdownsList"/>
         <!-- Logo -->
         <div class="logo-container col-2 text-center">
@@ -65,7 +65,9 @@
     @import '../../assets/scss/variables';
 
     nav {
+
         .logo-container {
+
             .clickable {
                 padding: 1.5rem;
 
@@ -75,6 +77,7 @@
             }
         }
         .nav-menu {
+            
             .search-input {
                 position: relative;
 
@@ -98,6 +101,6 @@
         }
     }
     .ms-n5 {
-    margin-left: -40px;
-} 
+        margin-left: -40px;
+    } 
 </style>

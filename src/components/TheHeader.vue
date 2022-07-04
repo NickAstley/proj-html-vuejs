@@ -1,6 +1,8 @@
 <template>
     <header>
+        <!-- Navbar -->
         <TheNavbar/>
+        <!-- Jumbo content -->
         <TheJumbotron/>
     </header>
 </template>

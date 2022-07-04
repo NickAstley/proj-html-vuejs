@@ -15,8 +15,27 @@ body {
     }
 
     main {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        
         p, span {
             color: #696969;
+        }
+
+        section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+   
+            a {
+                border-bottom: 1px solid #696969;
+                
+                &:hover {
+                    border-color: $primary;
+                }
+            }
+            p {
+                line-height: 1.5rem;
+            }
         }
     }
 

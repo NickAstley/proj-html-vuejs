@@ -1,44 +1,48 @@
 <template>
     <main>
+        <!-- Div che serve per impostare lo sfondo con gradiente e la curva -->
         <div class="bg-gradient-curved">
             <div class="container">
                 <!-- Sezione Work Culture -->
-                <WorkCulture/>
-                <!-- Sezione Work Culture -->
-                <UpgradeLife/>
+                <RowSection :section-name="`work-culture`"/>
+                <!-- Sezione di display dei dati sui corsi -->
+                <DataDisplay/>
+                <!-- Sezione Upgrade Life -->
+                <RowSection :section-name="`upgrade-life`"/>
                 <!-- Sezione Latest Courses con generazione delle card -->
                 <LatestCourses/>
             </div>
+        </div>
+        <div class="container">
+            <!-- Sezione People Hearts Us -->
+            <RowSection :section-name="`people-hearts`"/>
         </div>
     </main>
 </template>
 
 <script>
-    import WorkCulture from './main/WorkCulture';
-    import UpgradeLife from './main/UpgradeLife';
+    import RowSection from './main/RowSection';
+    import DataDisplay from './main/DataDisplay';
     import LatestCourses from './main/LatestCourses';
 
     export default {
         components: {
-            WorkCulture,
-            UpgradeLife,
+            RowSection,
+            DataDisplay,
             LatestCourses
         }
     }
 </script>
 
 <style lang="scss">
+    @import "../assets/scss/variables";
+
     main {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
 
         .bg-gradient-curved {
             background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
             clip-path: ellipse(180% 100% at 50% 0%);
-        }
-        section {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            margin-bottom: 5rem;
         }
     }
 </style>
