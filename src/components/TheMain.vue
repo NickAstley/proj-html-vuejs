@@ -16,6 +16,8 @@
         <div class="container">
             <!-- Sezione People Hearts Us -->
             <RowSection :section-name="`people-hearts`"/>
+            <!-- Sezione Transform You -->
+            <RowSection :section-name="`transform-you`"/>
         </div>
     </main>
 </template>

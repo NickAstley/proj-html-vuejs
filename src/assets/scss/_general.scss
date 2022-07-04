@@ -17,10 +17,6 @@ body {
     main {
         padding-top: 5rem;
         padding-bottom: 5rem;
-        
-        p, span {
-            color: #696969;
-        }
 
         section {
             padding-top: 5rem;
@@ -41,6 +37,20 @@ body {
 
     .small-text {
         font-size: 0.85rem;
+    }
+
+    .grey-text {
+        color: #696969;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+        color: white;
+
+        &:hover {
+            color: $primary;
+            background: white;
+        }
     }
 
     .btn-secondary {

@@ -4,6 +4,7 @@
         <div class="row justify-content-around align-items-center">
             <!-- In base alla prop passata da Main, stampo uno dei componenti figli. -->
             <UpgradeLife v-if="sectionName === `upgrade-life`"/>
+            <TransformYou v-if="sectionName === `transform-you`"/>
             <!-- Insieme stampo sempre SectionInfo, che prende i dati dall'oggetto in data -->
             <SectionInfo :section-data="sectionData[sectionName]"/>
             <WorkCulture v-if="sectionName === `work-culture`"/>
@@ -17,13 +18,15 @@
     import WorkCulture from './RowSection/WorkCulture'
     import UpgradeLife from './RowSection/UpgradeLife'
     import PeopleHeartsUs from './RowSection/PeopleHeartsUs'
+    import TransformYou from './RowSection/TransformYou'
 
     export default {
         components: {
             SectionInfo,
             WorkCulture,
             UpgradeLife,
-            PeopleHeartsUs
+            PeopleHeartsUs,
+            TransformYou
         },
         props: {
             sectionName: String
@@ -47,7 +50,7 @@
                         p: [
                             "Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month."
                         ],
-                        span: "Have questions?",
+                        spanText: "Have questions?",
                         link: {
                             text: "Get Free Guide",
                             color: "text-primary"
@@ -88,6 +91,23 @@
                         link: {
                             text: "View all"
                         }      
+                    },
+                    "transform-you": {
+                        subtitle: {
+                            normal: "Everything in",
+                            bold: "MaxCoach"
+                        },
+                        title: {
+                            normal: [
+                                "We're Here To",
+                                "You"
+                            ],
+                            bold: "Transform"
+                        },
+                        p: [
+                            "As learners, people can enjoy great companionship from MaxCoach mentors and educators. We can help you develop and grow at your best."
+                        ],
+                        buttonText: "Get Free Guide"     
                     }
                 }
             }

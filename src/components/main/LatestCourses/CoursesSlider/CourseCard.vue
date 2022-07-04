@@ -12,7 +12,7 @@
                 <!-- Titolo -->
                 <h5 class="fw-semibold mb-4">{{courseInfo.title}}</h5>
                 <!-- Numero Lezioni e studenti -->
-                <div class="small-text mb-3">
+                <div class="small-text grey-text mb-3">
                     <span class="d-inline-block me-5"><i class="fa-regular fa-file-lines"></i> {{courseInfo.lessonsNumber}} Lessons</span>
                     <span class="d-inline-block"><i class="fa-regular fa-user"></i> {{courseInfo.studentsNumber}} Student</span>
                 </div>

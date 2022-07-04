@@ -2,7 +2,7 @@
     <section class="last-courses">
         <!-- Blocco con titolo -->
         <div class="text-center mb-5">
-            <div class="text-uppercase mb-3">Join MaxCoach at best</div>
+            <div class="text-uppercase mb-3 grey-text">Join MaxCoach at best</div>
             <h2 class="display-5 fw-semibold mb-3">Last Online <span class="text-primary fw-light">Courses</span></h2>   
         </div>
         <!-- Slider dei corsi -->
