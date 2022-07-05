@@ -22,7 +22,7 @@
                 <!-- Blog -->
                 <div v-if="itemInfo.type === `blog`">
                     <!-- Categoria -->
-                    <span class="text-uppercase grey-text">${{itemInfo.category}}</span>
+                    <span class="text-uppercase grey-text">{{itemInfo.category}}</span>
                     <!-- Titolo -->
                     <h5 class="fw-semibold mb-4">{{itemInfo.title}}</h5>
                     <!-- Data e numero visualizzazioni -->
