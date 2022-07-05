@@ -18,7 +18,7 @@
         </p>
         <span v-if="sectionData.spanText" class="grey-text">{{sectionData.spanText}} </span>
         <a v-if="sectionData.link" href="#" class="fw-semibold" :class="sectionData.link.color">{{sectionData.link.text}} <i class="fa-solid fa-arrow-right-long"></i></a>
-        <button v-if="sectionData.buttonText" class="btn btn-primary fw-bold px-5 py-3">{{sectionData.buttonText}}</button>
+        <button v-if="sectionData.buttonText" class="btn btn-primary">{{sectionData.buttonText}}</button>
     </div>
 </template>
 

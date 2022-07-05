@@ -28,7 +28,7 @@
                     <!-- Barra di ricerca -->
                     <div class="col-6">
                         <div class="search-input">
-                            <input class="form-control small-text" type="text" placeholder="Search...">
+                            <input class="form-control my-input small-text" type="text" placeholder="Search...">
                             <span class="input-search-icon">
                                     <i class="fa fa-search input-search-icon"></i>
                             </span>
@@ -82,13 +82,6 @@
             
             .search-input {
                 position: relative;
-
-                input {
-                    background: #F5F5F5;
-                    border: none;
-                    padding: 0.8rem;
-                    font-weight: 300;
-                }
 
                 .input-search-icon {
                     position: absolute;

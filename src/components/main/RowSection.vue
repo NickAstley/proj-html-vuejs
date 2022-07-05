@@ -1,14 +1,16 @@
 <template>
     <!-- Questo componente stampa le section con una row ripetute per il layout del sito -->
     <section :class="sectionName">
-        <div class="row justify-content-around align-items-center">
-            <!-- In base alla prop passata da Main, stampo uno dei componenti figli. -->
-            <UpgradeLife v-if="sectionName === `upgrade-life`"/>
-            <TransformYou v-if="sectionName === `transform-you`"/>
-            <!-- Insieme stampo sempre SectionInfo, che prende i dati dall'oggetto in data -->
-            <SectionInfo :section-data="sectionData[sectionName]"/>
-            <WorkCulture v-if="sectionName === `work-culture`"/>
-            <PeopleHeartsUs v-if="sectionName === `people-hearts`"/>
+        <div class="container">
+            <div class="row justify-content-around align-items-center">
+                <!-- In base alla prop passata da Main, stampo uno dei componenti figli. -->
+                <UpgradeLife v-if="sectionName === `upgrade-life`"/>
+                <TransformYou v-if="sectionName === `transform-you`"/>
+                <!-- Insieme stampo sempre SectionInfo, che prende i dati dall'oggetto in data -->
+                <SectionInfo :section-data="sectionData[sectionName]"/>
+                <WorkCulture v-if="sectionName === `work-culture`"/>
+                <PeopleHeartsUs v-if="sectionName === `people-hearts`"/>
+            </div>
         </div>
     </section>
 </template>

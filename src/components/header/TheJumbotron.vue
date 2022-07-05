@@ -4,7 +4,7 @@
         <div class="text-white text-center">
             <h2 class="fw-bold">Commence Business</h2>
             <h1 class="display-3 mb-4">Distant Mentoring Program</h1>
-            <button class="btn btn-secondary fw-bold px-5 py-3">Download free guidebook <i class="fa-solid fa-arrow-right-long"></i></button>
+            <button class="btn btn-secondary">Download free guidebook <i class="fa-solid fa-arrow-right-long"></i></button>
         </div>
         <!-- Barra laterale con pulsanti -->
         <div class="side-menu bg-white text-center rounded-start">
