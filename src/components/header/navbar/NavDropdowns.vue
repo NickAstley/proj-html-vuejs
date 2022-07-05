@@ -29,7 +29,6 @@
 
 <style lang="scss">
     .nav-dropdowns {
-        list-style: none;
 
         .nav-item.dropdown {
             display: inline-block;
