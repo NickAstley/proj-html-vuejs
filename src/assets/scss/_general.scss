@@ -16,6 +16,10 @@ body {
         &.clickable {
             display: inline-block;
             padding: 1rem;
+
+            &:hover {
+                transform: scale(1.5);
+            }
         }
     }
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="item-card" :class="itemInfo.type === `course` ? `bg-white rounde` : ``">
+        <div class="item-card h-100" :class="itemInfo.type === `course` ? `bg-white rounded` : ``">
             <!-- Immagine corso -->
             <img :src="itemInfo.img_src" :alt="itemInfo.title">
             <div class="p-4">

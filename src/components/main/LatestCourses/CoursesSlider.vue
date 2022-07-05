@@ -6,8 +6,8 @@
         </div>
         <!-- Flex che stampa i bottoni per le pagine dello slider -->
         <div class="d-flex justify-content-center align-items-center">
-            <div v-for="i in Math.ceil(courses.length / 3)" :key="i" class="p-2">
-                <div class="page-circle" :class="i === currentPage ? `active` : ``" @click="changeCurrentPage(i)"></div>
+            <div v-for="i in Math.ceil(courses.length / 3)" :key="i" class="p-2 clickable" @click="changeCurrentPage(i)">
+                <div class="page-circle" :class="i === currentPage ? `active` : ``"></div>
             </div>
         </div>
     </div>
@@ -67,7 +67,7 @@
                     },
                     {
                         type: "course",
-                        img_src: "img/course-03.jpg",
+                        img_src: "img/course-04.jpg",
                         price: 19.00,
                         title: "Open Programming Courses for Everyone: Phyton",
                         lessonsNumber: "17",
@@ -75,7 +75,7 @@
                     },
                     {
                         type: "course",
-                        img_src: "img/course-00.jpg",
+                        img_src: "img/course-04.jpg",
                         price: 40.00,
                         title: "Learning to Write as a Professional Author",
                         lessonsNumber: "20",
@@ -112,16 +112,19 @@
         width: 90%;
         margin: auto;
 
-        .page-circle {
-            width: 0.5rem;
-            height: 0.5rem;
-            border-radius: 50%;
-            background: #D8D8D8;
+        .clickable {
+            cursor: pointer;
 
-            &.active {
-                width: 0.8rem;
-                height: 0.8rem;
-                background: black;
+            .page-circle {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #D8D8D8;
+
+                &.active {
+                    transform: scale(1.5);
+                    background: black;
+                }
             }
         }
     }

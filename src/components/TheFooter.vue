@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="copyright text-center">
-                &copy; Maxcoach. All Rights Reserved
+                &copy; 2020 Maxcoach. All Rights Reserved
             </div>
         </div>
     </footer>
